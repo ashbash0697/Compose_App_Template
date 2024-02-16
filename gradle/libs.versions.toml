@@ -1,0 +1,179 @@
+[versions]
+# Kotlin
+
+kotlin = "1.9.22" # check also ksp
+kotlinx-immutableCollections = "0.3.7"
+kotlinx-datetime = "0.5.0"
+kotlinx-serialization-protobuf = "1.6.2"
+kotlinx-serialization-json = "1.6.2"
+kotlinx-coroutines = "1.7.3"
+
+# UI
+compose-bom = "2024.02.00"
+activity-compose = "1.8.2"
+compose-compiler = "1.5.9"
+compose-material3 = "1.2.0"
+androidx-lifecycle = "2.7.0"
+coil = "2.5.0"
+core-splashscreen = "1.0.1"
+appcompat = "1.6.1"
+
+# Navigation
+compose-destinations = "1.9.62" # check compose version
+
+# Dependency Injection
+hilt = "2.49"
+hilt-navigation-compose = "1.1.0"
+
+# Room
+room = "2.6.1"
+
+# Datastore
+datastore = "1.0.0"
+
+# Desugaring
+desugar-jdk-libs = "2.0.4"
+
+# Formatting + Linting
+detekt = "1.23.4"
+compose-lints = "1.3.1"
+
+# API calls
+retrofit = "2.9.0"
+retrofit-kotlinx-serialization-json = "1.0.0"
+okhttp = "5.0.0-alpha.12"
+
+# Plugins
+android-gradle-plugin = "8.2.2"
+ksp = "1.9.22-1.0.17" # check kotlin version
+kotlinx-serialization-plugin = "1.9.10"
+core-ktx = "1.12.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+material = "1.11.0"
+
+[libraries]
+# Kotlin
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+
+kotlinx-immutableCollections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinx-immutableCollections" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-datetime" }
+kotlinx-serialization-protobuf = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-protobuf", version.ref = "kotlinx-serialization-protobuf" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+kotlinx-kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+
+
+# UI
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version = "1.6.1" }
+compose-animation = { group = "androidx.compose.animation", name = "animation" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material3" }
+compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "compose-material3" }
+lifecycle-viewModel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
+
+
+# collectAsStateWithLifecycle()
+lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+
+# SavedStateHandle
+lifecycle-viewModel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidx-lifecycle" }
+
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+icons-material-core = { group = "androidx.compose.material", name = "material-icons-core" }
+icons-material-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "core-splashscreen" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# Navigation
+compose-destinations-core = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "compose-destinations" }
+compose-destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "compose-destinations" }
+
+# Dependency Injection
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+# hiltViewModel()
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+
+# Room
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+
+# Datastore
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+
+# Desugaring
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugar-jdk-libs" }
+
+# Formatting + Linting
+detekt = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+linting-composeLints = { group = "com.slack.lint.compose", name = "compose-lint-checks", version.ref = "compose-lints" }
+
+# API calls
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofit-kotlinx-serialization-json" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+okhttp-sse = { group = "com.squareup.okhttp3", name = "okhttp-sse", version.ref = "okhttp" }
+
+[plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinx-serialization-plugin" }
+androidLibrary = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+
+[bundles]
+compose = [
+    "activity-compose",
+    "compose-runtime",
+    "compose-foundation",
+    "compose-ui",
+    "compose-ui-util",
+    "compose-ui-graphics",
+    "compose-ui-tooling-preview",
+    "compose-animation",
+    "compose-material3",
+    "compose-material3-windowSizeClass",
+    "lifecycle-viewModel-compose",
+    "lifecycle-runtimeCompose",
+    "lifecycle-viewModel-savedstate"
+]
+kotlin = [
+    "core-ktx",
+    "kotlinx-immutableCollections",
+    "kotlinx-datetime",
+    "kotlinx-serialization-protobuf",
+    "kotlinx-coroutines-android",
+    "kotlinx-serialization-json",
+    "kotlinx-kotlin-reflect"
+]
+hilt = [
+    "hilt-android",
+    "hilt-navigation-compose"
+]
+room = [
+    "room-ktx",
+    "room-runtime"
+]
+retrofit = [
+    "retrofit-core",
+    "retrofit-kotlin-serialization",
+    "okhttp-logging",
+    "okhttp",
+    "okhttp-sse"
+]
+
